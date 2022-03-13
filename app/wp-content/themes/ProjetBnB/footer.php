@@ -14,8 +14,8 @@
                 Nos différentes offres</p>
             <p id = "poster">Poster une offre</br>
             Favoris</p>
-        <section id = "tel"></section>
         </section>
+        <section id = "tel"></section>
         <p id = "droit">© 2022 Nom du site. Tous droits réservés.</br>
         Confidentialité - Conditions générales - Mentions Légales - Contact - p propos</p>
     </div>
