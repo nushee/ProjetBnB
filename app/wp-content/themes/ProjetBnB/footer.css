@@ -4,101 +4,49 @@ Author: Séverine BOURIN
 Description: Création d'un theme pour le projet en cours de CMS
 Version: 1.0.0
 */
+:root {
+	--footer-padding: 10px;
 
-#footer{
-position: absolute;
-width: 1440px;
-height: 219px;
-left: 0px;
-bottom: 0px;
+}
+
+#footer
+{
+    display: grid;
+padding-top: 40px;
+align-content: space-evenly;
+justify-items: center;
+align-items: center;
+width: auto;
+height: auto;
 
 background: #EAEAEA;
+font-family: 'Archivo';
 };
 
-/*partie logo*/
-#logo-social
-{
-    position: absolute;
-    width: 372px;
-    height: 94px;
-    left: 90px;
-}
-
-/*logo*/
-#logo
-{
-    position: absolute;
-    width: 107px;
-    height: 39px;
-    left: 90px;
-}
-
-/*siege social*/
-#siege
-{
-position: absolute;
-width: 372px;
-height: 40px;
-left: 90px
-}
-
-/*Service*/
 #service
 {
-position: absolute;
-width: 614px;
-height: 40px;
-left: 736px
-}
-
-/*Titre servie*/
-#service
-{
-    position: absolute;
-width: 179px;
-height: 33px;
-left: 736px
-
-}
-
-/*recherche*/
-#recherche
-{
-    position: absolute;
-width: 169px;
-height: 40px;
-left: 985px
-
-}
-
-/*poster*/
-#poster
-{
-    position: absolute;
-width: 126px;
-height: 40px;
-left: 1224px
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 33px;
 }
 
 /*separation*/
 #separation
 {
-    position: absolute;
-width: 125px;
+width: 100px;
 height: 0px;
-left: 609px;
 
-border: 1px solid #A3A3A3;
+border: 1px solid #000000;
 transform: rotate(90deg);
 }
 
 /*Modalités*/
 #droit
 {
-    position: absolute;
+grid-column: 1 / 4;
 width: 617px;
 height: 40px;
-left: 411px;
 
 font-family: Archivo;
 font-style: normal;
@@ -106,4 +54,52 @@ font-weight: normal;
 font-size: 18px;
 line-height: 20px;
 text-align: center;
+}
+
+/* Smartphone */
+@media screen and ( max-width: 650px ) {
+	/* Variables */
+	:root {
+		--global-horizontal-padding: 10px;
+	}
+    #footer{
+        grid-template-rows: 1fr 50px 1fr 50px 1fr;
+        grid-template-columns: 1fr;
+    }
+    #separation{
+       
+        width: 325px;
+        height: 0px;
+        left: 25px;
+        transform: rotate(0deg);
+        border: 1px solid #C4C4C4;
+    }
+    #tel{
+       
+        width: 325px;
+        height: 0px;
+        left: 25px;
+        border: 1px solid #C4C4C4;
+    }
+
+}
+
+/* Desktop */
+@media screen and ( min-width: 651px ) {
+	/* Variables */
+	:root {
+		--global-horizontal-padding: 40px;
+	}
+    #footer{
+    grid-template-columns: 1fr 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+}
+
+/* Ultra-Wide */
+@media screen and ( min-width: 1200px ) {
+	/* Variables */
+	:root {
+		--global-horizontal-padding: 10vw;
+	}
 }

@@ -8,15 +8,16 @@
                 75011 Paris</p>
         </section>
         <section id = "separation"></section>
-        <section id = "services">
+        <section class = "service">
             <p id = "service">Nos services</p>
             <p id = "recherche">Recherche par villes </br>
-            Nos différentes offres</p>
+                Nos différentes offres</p>
             <p id = "poster">Poster une offre</br>
             Favoris</p>
+        <section id = "tel"></section>
         </section>
         <p id = "droit">© 2022 Nom du site. Tous droits réservés.</br>
-        Confidentialité - Conditions générales - Mentions Légales - Contact - A propos</p>
+        Confidentialité - Conditions générales - Mentions Légales - Contact - p propos</p>
     </div>
 </footer>
 </body>
