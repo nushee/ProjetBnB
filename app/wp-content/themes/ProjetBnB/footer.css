@@ -11,13 +11,12 @@ Version: 1.0.0
 
 #footer
 {
-    display: grid;
 padding-top: 40px;
 align-content: space-evenly;
 justify-items: center;
 align-items: center;
-width: auto;
-height: auto;
+width: 100%;
+height: 100%;
 
 background: #EAEAEA;
 font-family: 'Archivo';
@@ -45,8 +44,6 @@ transform: rotate(90deg);
 #droit
 {
 grid-column: 1 / 4;
-width: 617px;
-height: 40px;
 
 font-family: Archivo;
 font-style: normal;
@@ -63,23 +60,27 @@ text-align: center;
 		--global-horizontal-padding: 10px;
 	}
     #footer{
-        grid-template-rows: 1fr 50px 1fr 50px 1fr;
-        grid-template-columns: 1fr;
+        position: relative;
+        padding-bottom: 5px;
     }
     #separation{
        
         width: 325px;
         height: 0px;
-        left: 25px;
         transform: rotate(0deg);
         border: 1px solid #C4C4C4;
     }
+    .contenu{
+        position: relative;
+        left: 12%;
+    }
     #tel{
-       
         width: 325px;
         height: 0px;
-        left: 25px;
         border: 1px solid #C4C4C4;
+    }
+    #droit{
+        max-width: 450px;
     }
 
 }
@@ -91,8 +92,12 @@ text-align: center;
 		--global-horizontal-padding: 40px;
 	}
     #footer{
+    display: grid;
     grid-template-columns: 1fr 50px 1fr;
     grid-template-rows: 1fr 1fr;
+    }
+    #tel{
+        display:none;
     }
 }
 
